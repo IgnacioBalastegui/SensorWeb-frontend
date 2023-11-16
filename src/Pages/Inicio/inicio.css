@@ -1,0 +1,100 @@
+.Inicio {
+  /*text-align: center;
+  flex: 1;*/
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.imagen-carousel {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.aria-label{
+  width: 100%;
+  height: 450px;
+  padding: 15px;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  transform: translate(-50% -50%);
+  }
+
+.h1-inicio {
+  padding: 15px;
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+  font-size: 40px;
+  background-position: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.h2-inicio {
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+  background-position: center;
+  text-align: center;
+}
+
+h3 {
+  color: orangered;
+  font-weight: bold;
+  background-position: center;
+}
+
+.tituloTexto {
+  font-size: 20px;
+}
+
+.row {
+  margin-top: 60px;
+}
+
+.subtitulo {
+  color: orangered;
+  padding-right: 100px;
+}
+
+.texto1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../../Images/hogar.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.texto2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: -30px;
+}
+
+.texto2 p {
+  padding-right: 60px;
+  margin-right: 20px;
+}
+
+.container-inicio {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.columna1 {
+  padding: 25px;
+  margin: 0 20px;
+  text-align: left;
+  height: 100%;
+
+}
+
+.columna2 {
+  padding: 25px;
+  margin: 0 15px;
+  text-align: left;
+
+}

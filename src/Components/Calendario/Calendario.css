@@ -1,0 +1,55 @@
+.calendar-container{
+    width: 55%;
+    margin: auto;
+    position: relative;  
+}
+
+.weekdays-container{
+   display:flex;
+   margin: auto;
+   justify-content: space-around;
+    
+}
+
+.weekdays-container .week-day{
+    color: #808080;
+}
+
+.calendar{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.calendar .week {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.date{
+    background: white;
+    border: none;
+   
+}
+
+.datePicker-container span{
+    font-size: 20px;
+}
+
+.today{
+    background-color: #02d5f5;
+    color: white;
+    border-radius: 5px;
+    /*filter: drop-shadow(2px 2px 2px #02d5f5)*/
+}
+
+.selected{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}

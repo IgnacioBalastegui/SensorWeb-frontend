@@ -1,0 +1,39 @@
+.Favoritos{
+  margin-bottom: 70px;
+}
+
+.title{
+  margin-top: 50px;
+}
+
+.historialImagen{
+  width: 100px;
+}
+
+.margen{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.inicioTabla{
+  background-color: orangered;
+}
+
+.inicioTabla th{
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.datosTabla{
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.datosTabla2{
+  margin-left: 10px;
+}
+
+.botonEliminar{
+  margin-top: 20px;
+  margin-left: 20px;
+}

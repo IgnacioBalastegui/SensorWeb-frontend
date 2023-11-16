@@ -1,0 +1,50 @@
+.Login {
+
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.formularioLogin {
+    padding-inline: 100px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+}
+
+.formularioLogin form{
+
+    padding-inline: 60px;
+    }
+    
+    .formularioLogin form input{
+        width: 135%;
+        margin-left: -40px;
+        }
+    
+        .formularioLogin form label{
+           
+            margin-left: -40px;
+            }
+
+.tituloLogin {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.mensajeError {
+    color: red;
+}
+
+.cuadroError {
+    background-color: rgb(228, 169, 179);
+    border-width: 2px;
+    border-color: red;
+}
+
+.form-check a {
+    color: orangered;
+}
+

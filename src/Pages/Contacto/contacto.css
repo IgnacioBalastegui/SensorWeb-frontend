@@ -1,0 +1,42 @@
+.contacto{
+    margin-bottom: 100px;
+}
+
+.title{
+    color: orangered;
+    text-transform: uppercase;
+ }
+
+ .formContacto{
+    margin-left: 45px;
+    padding-inline: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+}
+
+.botonEnvio{
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-inline: 35%;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: rgb(255, 60, 0);
+    border-color: rgb(255, 60, 0);
+}
+
+.btn:hover {
+    background-color: rgba(255, 60, 0, 0.623);
+    border-color: rgba(255, 60, 0, 0.623);
+}
+
+.iconos ul li i{
+    color: orangered;
+}
+
+.iconos ul li p{
+    color: orangered;
+}

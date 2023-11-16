@@ -1,0 +1,48 @@
+.Register {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.formularioRegistro {
+    padding-inline:100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+}
+
+.formularioRegistro form{
+
+padding-inline: 60px;
+}
+
+.formularioRegistro form input{
+    width: 135%;
+    margin-left: -40px;
+    }
+
+    .formularioRegistro form label{
+       
+        margin-left: -40px;
+        }
+    
+.cuadroError {
+    background-color: rgb(228, 169, 179);
+    border-width: 2px;
+    border-color: red;
+}
+
+.mensajeError {
+    color: red;
+}
+
+
+.picker {
+    width:115%;
+    height: 38px;
+   padding-right: 80px;
+}
+

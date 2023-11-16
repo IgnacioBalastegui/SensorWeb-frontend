@@ -1,0 +1,28 @@
+.CompraRealizada{
+    margin-bottom: 70px;
+  }
+  
+  .title{
+    margin-top: 50px;
+  }
+  
+  
+  .margen{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .inicioTabla{
+    background-color: orangered;
+  }
+  
+  .inicioTabla th{
+    color: #ffff;
+    text-transform: uppercase;
+  }
+  
+.noCompras{
+  margin: 130px;
+  font-size: 30px;
+  font-weight: bold;
+}

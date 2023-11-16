@@ -1,0 +1,75 @@
+/*.col {
+    padding-left: 160px;
+
+}*/
+
+.comprasRealizadas {
+    margin-left: 41.5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.perfilDato {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.perfilDato2 {
+    font-size: 22px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.editarPerfil {
+    align-items: center;
+    margin-bottom: 40px;
+    margin-inline: 20%;
+
+}
+
+.formEditarPerfil {
+    padding-inline: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.botonEntrarEditarPerfil {
+    margin-left: 16.3%;
+    margin-bottom: 30px;
+}
+
+.botonEditarPerfil {
+margin-left: 23%;
+padding-inline: 30px;
+margin-top: 20px;
+}
+
+.pickerPerfil {
+    padding-right: 680px;
+    width: 100%;
+    height: 38px;
+}
+
+/*.pruebaCalen{
+background-color: blue;
+}*/
+
+.datosPerfilContainer {
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+}
+
+.labelEditarPerfil {
+    color: orangered;
+    font-weight: bold;
+}

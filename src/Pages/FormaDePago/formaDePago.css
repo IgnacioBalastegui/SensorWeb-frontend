@@ -1,0 +1,51 @@
+.FormaDePago {
+    flex: 1;
+    align-items: center;
+}
+
+.prueba {
+    margin-left: 40px;
+}
+
+.colInputMetodo {
+    padding-left: 40px;
+}
+
+.filaMetodoPago {
+    justify-content: center;
+}
+
+.vistaFormaPago {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.selectMetodoPago {
+    padding: 5px;
+    padding-right: 30px;
+}
+
+
+.botonMercadoPago {
+    margin-inline: 35%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.botonVolver {
+    margin-inline: 40%;
+    margin-top: 40px;
+}
+
+.FormaDePagoTarjeta {
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+    margin-inline: 30%;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 20px;
+}

@@ -1,0 +1,33 @@
+.carrito {
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.carritoContenido {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+
+.botonElegirFormaPago {
+    margin-inline: 40%;
+}
+
+.seccionCantidad {
+    justify-content: center;
+    margin-top: 0;
+
+}
+
+
+.botonMasMenos {
+    padding: 5px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: -20px;
+    padding-inline: 10px;
+}
