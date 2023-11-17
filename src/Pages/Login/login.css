@@ -6,7 +6,7 @@
 }
 
 .formularioLogin {
-    padding-inline: 100px;
+padding-inline: 30px;
     padding-bottom: 30px;
     border-style: solid;
     border-width: 5px;
@@ -14,20 +14,25 @@
     border-radius: 50px;
 }
 
-.formularioLogin form{
+.formularioLogin form {
 
     padding-inline: 60px;
-    }
-    
-    .formularioLogin form input{
-        width: 135%;
-        margin-left: -40px;
-        }
-    
-        .formularioLogin form label{
-           
-            margin-left: -40px;
-            }
+}
+
+.formularioLogin form input {
+    width: 135%;
+    margin-left: -40px;
+}
+
+.formularioLogin form label {
+
+    margin-left: -40px;
+}
+
+.formularioLogin .form-outline{
+padding-inline: 40px;
+margin-right: -10px;
+}
 
 .tituloLogin {
     text-align: center;
@@ -47,4 +52,3 @@
 .form-check a {
     color: orangered;
 }
-

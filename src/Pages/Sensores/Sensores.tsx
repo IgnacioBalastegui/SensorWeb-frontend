@@ -25,14 +25,6 @@ export const Sensores = () => {
        <div className="search">
         <Search />
       </div>
-      {/*<h3 className="title">
-        <strong>Lista de productos</strong>
-      </h3>
-      <div className="products-container">
-        {productos.map((product) => (
-          <Sensor key={product.id} product={product} />
-        ))}
-        </div>*/}
     </div>
   );
 };

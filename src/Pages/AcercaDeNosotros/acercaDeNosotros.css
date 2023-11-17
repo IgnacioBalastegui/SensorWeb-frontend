@@ -47,8 +47,6 @@ padding-inline: 30px;
   /*min-width: 250px; */
   border-radius: 20px;
   object-fit: cover; 
-  flex-wrap: wrap;
-  display: flex;
 }
 
 .textoAcercaDe{
@@ -66,11 +64,13 @@ padding-inline: 30px;
   padding-inline: 15px;
   padding-top: 20px;
   padding-bottom: 10px;
-  display: flex;
+flex-wrap: wrap;
+display: flex;
 }
 
 .contenidoAcercaDe h3{
     font-size: 40px; 
+    text-align: center;
 }
 
 .contenidoAcercaDe p{

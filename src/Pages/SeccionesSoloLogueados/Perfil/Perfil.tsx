@@ -94,26 +94,27 @@ export const Perfil = () => {
           </div>
         </div>
 
+        <div className="opcionesPerfil">
+          <Link
+            className="btn btn-primary botonEntrarEditarPerfil"
+            to={RUTA.EDITAR_PERFIL}
+          >
+            Editar Perfil
+          </Link>
 
-        <Link
-          className="btn btn-primary botonEntrarEditarPerfil"
-          to={RUTA.EDITAR_PERFIL}
-        >
-          Editar Perfil
-        </Link>
+          <Link
+            className="btn btn-primary botonEntrarEditarPerfil"
+            to={RUTA.CAMBIAR_CONTRASENIA}
+          >
+            Cambiar Contraseña
+          </Link>
 
-        <Link
-          className="btn btn-primary botonEntrarEditarPerfil"
-          to={RUTA.CAMBIAR_CONTRASENIA}
-        >
-          Cambiar Contraseña
-        </Link>
-
-        <Link className="btn btn-primary botonEntrarEditarPerfil" 
-        to={RUTA.ELIMINAR_PERFIL}
-        >
-          Eliminar Perfil
-        </Link>
+          <Link className="btn btn-primary botonEntrarEditarPerfil"
+            to={RUTA.ELIMINAR_PERFIL}
+          >
+            Eliminar Perfil
+          </Link>
+        </div>
 
       </div>
       <Link

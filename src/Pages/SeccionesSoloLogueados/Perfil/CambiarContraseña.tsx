@@ -80,9 +80,9 @@ export const CambiarContrasenia = () => {
 
   return (
 
-    <div className="editarPerfil">
+    <div className="cambiarContraseña">
       <form
-        className="formEditarPerfil"
+        className="formCambiarContraseña"
         id="contact-form"
         name="contact-form"
         onSubmit={onSubmit}

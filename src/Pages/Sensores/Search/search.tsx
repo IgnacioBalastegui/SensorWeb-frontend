@@ -57,7 +57,7 @@ const Search: React.FC = () => {
 
       <div className="body">
         {productos && productos?.length === 0 && (
-          <div className="notFound">sensor no disponible</div>
+          <div className="notFound"><strong>Sensor no disponible</strong></div>
         )}
 
         <div className="products-container">

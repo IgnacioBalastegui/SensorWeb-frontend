@@ -29,11 +29,21 @@
     align-items: center;
     margin-bottom: 40px;
     margin-inline: 20%;
+}
 
+.cambiarContraseña{
+   
+    margin-bottom: 40px;
+
+    display: flex;
 }
 
 .formEditarPerfil {
-    padding-inline: 80px;
+    /*   padding-inline: 80px;*/
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-style: solid;
     border-width: 5px;
     border-color: orangered;
@@ -41,20 +51,37 @@
     margin-top: 50px;
 }
 
-.botonEntrarEditarPerfil {
-    margin-left: 16.3%;
+.formCambiarContraseña {
+    /*   padding-inline: 80px;*/
+
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orangered;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.opcionesPerfil {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-inline: 120px;
+    justify-content: space-between;
 }
 
 .botonEditarPerfil {
-margin-left: 23%;
-padding-inline: 30px;
-margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-inline: 30px;
+    margin-top: 20px;
 }
 
 .pickerPerfil {
-    padding-right: 680px;
-    width: 100%;
+    /*padding-right: 680px;
+    width: 100%;*/
+    margin-right: 290px;
     height: 38px;
 }
 
@@ -67,6 +94,7 @@ background-color: blue;
     border-width: 5px;
     border-color: orangered;
     border-radius: 50px;
+    min-width: 400px;
 }
 
 .labelEditarPerfil {

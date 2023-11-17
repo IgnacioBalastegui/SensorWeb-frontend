@@ -277,7 +277,7 @@ export const EditarPerfil = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-6">
             <label className="labelEditarPerfil">Nacionalidad:</label>
             <input
               type="text"
@@ -299,10 +299,8 @@ export const EditarPerfil = () => {
               </span>
             )}
           </div>
-        </div>
 
-        <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-6">
             <label className="labelEditarPerfil">Fecha de Nacimiento:</label>
             <div  /*className="pruebaCalen"*/>
               <Datepicker selected={date} onChange={onChange} locale="es" dateFormat="yyyy/MM/dd"
@@ -322,6 +320,28 @@ export const EditarPerfil = () => {
             )}
           </div>
         </div>
+
+        {/*<div className="row">
+          <div className="col-md-12">
+            <label className="labelEditarPerfil">Fecha de Nacimiento:</label>
+            <div>
+              <Datepicker selected={date} onChange={onChange} locale="es" dateFormat="yyyy/MM/dd"
+                className={`${"form-control pickerPerfil"} ${errors.fechaNacimiento && "cuadroError"}`}
+                isClearable
+                placeholderText="Seleccione una fecha"
+                peekNextMonth
+                showMonthDropdown
+                showYearDropdown
+                dropdownMode="select" />
+            </div>
+
+            {errors.fechaNacimiento && (
+              <span className={errors.fechaNacimiento && "mensajeError"}>
+                {errors.fechaNacimiento.message}
+              </span>
+            )}
+          </div>
+        </div>*/}
 
         <div className="text-center text-md-left botonEditarPerfil">
           <button type="submit" className="btn btn-primary mb-4 botonEditarPerfil" disabled={cargando ? true : false}>

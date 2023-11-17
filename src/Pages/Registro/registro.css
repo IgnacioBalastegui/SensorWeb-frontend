@@ -5,7 +5,7 @@
 }
 
 .formularioRegistro {
-    padding-inline:100px;
+    padding-inline: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-style: solid;
@@ -14,21 +14,21 @@
     border-radius: 50px;
 }
 
-.formularioRegistro form{
+.formularioRegistro form {
 
-padding-inline: 60px;
+    padding-inline: 60px;
 }
 
-.formularioRegistro form input{
+.formularioRegistro form input {
     width: 135%;
     margin-left: -40px;
-    }
+}
 
-    .formularioRegistro form label{
-       
-        margin-left: -40px;
-        }
-    
+.formularioRegistro form label {
+
+    margin-left: -40px;
+}
+
 .cuadroError {
     background-color: rgb(228, 169, 179);
     border-width: 2px;
@@ -41,8 +41,7 @@ padding-inline: 60px;
 
 
 .picker {
-    width:115%;
+    width: 115%;
     height: 38px;
-   padding-right: 80px;
+    padding-right: 80px;
 }
-

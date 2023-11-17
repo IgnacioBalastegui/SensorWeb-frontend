@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   margin: 0px auto;
+  min-width: 430px;
 }
 
 .imagen-carousel {

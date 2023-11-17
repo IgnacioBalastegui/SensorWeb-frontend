@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <>
       <header>
-      {/*SDK MercadoPago.js*
+        {/*SDK MercadoPago.js*
 <script src="https://sdk.mercadopago.com/js/v2"></script>*/}
 
 
@@ -49,18 +49,26 @@ export const Header = () => {
               <Link to="/contacto" className="nav-item nav-link">
                 Contacto
               </Link>
-              <Link to="/favoritos" className="nav-item nav-link">
-                Favoritos
-              </Link>
-
+              {isLogged() && (
+                <Link to="/favoritos" className="nav-item nav-link">
+                  Favoritos
+                </Link>
+              )}
               {isLogged() && (
                 <Link to="/perfil" className="nav-item nav-link">
                   Perfil
                 </Link>
               )}
             </ul>
-          </div>
 
+          </div>
+          <div >
+            <ul className="navbar-nav">
+              <Link to="/carrito" className="nav-item nav-link">
+                🛒
+              </Link>
+            </ul>
+          </div>
           {!isLogged() && (
             <div>
               <ul className="navbar-nav">
@@ -69,18 +77,8 @@ export const Header = () => {
                 </Link>
               </ul>
             </div>
-
-
           )}
 
-          <div>
-            <ul className="navbar-nav">
-              <Link to="/carrito" className="nav-item nav-link">
-              🛒
-              </Link>
-            </ul>
-          </div>
-          
           {isLogged() && (
             <div>
               <ul className="navbar-nav">
@@ -94,6 +92,7 @@ export const Header = () => {
               </ul>
             </div>
           )}
+
         </nav>
       </header>
     </>
