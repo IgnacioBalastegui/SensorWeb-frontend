@@ -41,7 +41,7 @@ export const ConfirmarCambioMail = () => {
         };
 
         const URL: string =
-            "http://localhost:8080/sensor/api/users/confirm-data";
+            "http://proyecto-backend-web-production.up.railway.app/sensor/api/users/confirm-data";
 
         axios
             .post(URL, codigo, config)

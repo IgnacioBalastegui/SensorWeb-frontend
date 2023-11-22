@@ -10,7 +10,7 @@ export const Sensores = () => {
   const [productos, setProductos] = useState<IProducto[]>([]);
 
   const getProductos = () => {
-    axios.get("http://localhost:8080/sensor/api/products/all").then((res) => {
+    axios.get("http://proyecto-backend-web-production.up.railway.app/sensor/api/products/all").then((res) => {
       setProductos(res.data);
     });
   };

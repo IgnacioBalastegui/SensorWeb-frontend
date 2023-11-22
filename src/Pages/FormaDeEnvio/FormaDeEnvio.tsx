@@ -60,100 +60,26 @@ export const FormaDeEnvio = () => {
         setIsPorCorreo(false)
         setIsEnLocal(false)
 
-        /*if(isADomicilio){
-            setMetodoEnvio("Envio a domicilio")
-        }else{
-            setMetodoEnvio("")
-        }*/
         setMetodoEnvio("A domicilio")
-        console.log(metodoEnvio)
+        //console.log(metodoEnvio)
     };
 
-    /*const handleOnChange2 = (): void => {
-        setIsPorCorreo(!isPorCorreo)
-        setIsADomicilio(false)
-        setIsEnLocal(false)
 
-        /* if(isPorCorreo){
-             setMetodoEnvio("Por Correo")
-         }else{
-             setMetodoEnvio("")
-         }*
-        setMetodoEnvio("Por Correo")
-        console.log(metodoEnvio)
-    };*/
 
     const handleOnChange3 = (): void => {
         setIsEnLocal(!isEnLocal)
         setIsPorCorreo(false)
         setIsADomicilio(false)
 
-        /* if(isEnLocal){
-             setMetodoEnvio("Retirar en local")
-         }else{
-             setMetodoEnvio("")
-         }*/
+
         setMetodoEnvio("Retiro en local")
-        console.log(metodoEnvio)
+        //console.log(metodoEnvio)
     };
-
-    /* const getCheckout = () => {
- 
-         if (localStorage.getItem("token")) {
-             const token: string = JSON.stringify(localStorage.getItem("token"));
- 
-             const config: any = {
-                 headers: {
-                     Authorization: "Bearer " + window.localStorage.getItem("token"),
-                 },
-             };
- 
-             const payload = token.split(".")[1];
-             const payloadDecoded = atob(payload);
-             const values = JSON.parse(payloadDecoded);
-             //const email = values.email;
- 
-             const URL: string =
-                 "http://localhost:8080/sensor/api/carts/next-step";
- 
-             const body: IBodyNextStep = {
-                 shippingMethodAndAddress:
-                 {
-                     shippingMethod: null,
- 
-                     addresses: null
-                 },
-                 paymentMethod: null
- 
- 
-             }
- 
-             axios.post(URL, body, config).then((res) => {
- 
-                 console.log(res.data)
-             }).catch(err => {
-                 console.log("ERROR: " + err)
-             });
-         }
-     };*/
-
-    useEffect(() => {
-        // getCheckout();
-        //console.log("fuera del axios: "+prodCarrito)
-    }, [/*prodCarrito*/]);
 
     const navigate = useNavigate();
 
     const onSubmit = handleSubmit((data, event) => {
-        console.log(data);
-        /* const direccion: DatosDireccion = {
-             calle: data.calle,
-             calleNumero: data.calleNumero
-         };
- 
-         const metodoDeEnvio: MetodoEnvio = {
-             shippingMethod: metodoEnvio
-         }*/
+       // console.log(data);
 
         if (localStorage.getItem("token")) {
             const token: string = JSON.stringify(localStorage.getItem("token"));
@@ -170,7 +96,7 @@ export const FormaDeEnvio = () => {
             //const email = values.email;
 
             const URL: string =
-                "http://localhost:8080/sensor/api/carts/next-step";
+                "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/next-step";
 
             const body: IBodyNextStep = {
                 shippingMethodAndAddress:
@@ -197,7 +123,7 @@ export const FormaDeEnvio = () => {
 
             axios.post(URL, body, config).then((res) => {
 
-                console.log(res.data)
+                //console.log(res.data)
                 navigate(RUTA.FORMADEPAGO);
 
             }).catch(err => {
@@ -223,7 +149,7 @@ export const FormaDeEnvio = () => {
             //const email = values.email;
 
             const URL: string =
-                "http://localhost:8080/sensor/api/carts/cancel";
+                "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/cancel";
 
             axios.post(URL,{}, config).then((res) => {
 

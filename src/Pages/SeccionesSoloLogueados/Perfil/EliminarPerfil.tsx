@@ -41,7 +41,7 @@ export const EliminarPerfil = () => {
 
 
     axios
-      .post("http://localhost:8080/sensor/api/users/delete-user", codigo, config)
+      .post("http://proyecto-backend-web-production.up.railway.app/sensor/api/users/delete-user", codigo, config)
       .then((res) => {
         console.log("usuario eliminado");
         event?.target.reset();

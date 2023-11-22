@@ -45,7 +45,7 @@ export const ItemFavoritos = ({ favorito }: Props) => {
       //const email = values.email;
 
       const URL: string =
-        "http://localhost:8080/sensor/api/favorites/products/" + favorito.product.id;
+        "http://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/products/" + favorito.product.id;
 
       axios.delete(URL, config).then((res) => {
 

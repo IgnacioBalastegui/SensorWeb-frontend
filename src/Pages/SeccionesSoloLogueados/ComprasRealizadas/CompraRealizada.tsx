@@ -8,13 +8,6 @@ import { ItemCompraRealizada } from "./ItemCompraRealizada/ItemCompraRealizada";
 export const CompraRealizada = () => {
   const navigate = useNavigate();
 
-  /*interface IComprasRealizadas {
-    id?: number;
-    productName?: number;
-    quantity?: number;
-    price?: number;
-  }*/
-
   interface comprasRealizadasProductos {
     productId?: number;
     name?: string;
@@ -44,15 +37,15 @@ export const CompraRealizada = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://localhost:8080/sensor/api/sale-orders/user?state=ENTREGAR_PRODUCTOS";
+        "http://proyecto-backend-web-production.up.railway.app/sensor/api/sale-orders/user?state=ENTREGAR_PRODUCTOS";
 
       axios.get(URL, config).then((res) => {
         setProductos(res.data[0].products);
 
-        console.log("DATOS:");
+       /* console.log("DATOS:");
         console.log(res.data);
         console.log("PRODUCTOS:");
-        console.log(res.data.products);
+        console.log(res.data.products);*/
       }).catch(err => {
         console.log(err)
       });

@@ -25,7 +25,7 @@ export const Contacto = () => {
 
   const agregarMensajeContacto = handleSubmit((data, event) => {
     event?.preventDefault();
-    const URL = "http://localhost:8080/sensor/api/contact-messages";
+    const URL = "http://proyecto-backend-web-production.up.railway.app/sensor/api/contact-messages";
 
     const contacto: IFormularioContacto = {
       name: data.name,

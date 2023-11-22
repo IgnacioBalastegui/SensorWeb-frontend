@@ -41,7 +41,7 @@ export const ConfirmarCambioContraseña = () => {
         };
 
         const URL: string =
-            "http://localhost:8080/sensor/api/users/confirm-password";
+            "http://proyecto-backend-web-production.up.railway.app/sensor/api/users/confirm-password";
 
         axios
             .post(URL, codigo, config)

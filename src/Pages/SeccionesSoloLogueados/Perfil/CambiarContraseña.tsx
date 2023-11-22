@@ -55,7 +55,7 @@ export const CambiarContrasenia = () => {
         Authorization: "Bearer " + window.localStorage.getItem("token"),
       },
     };
-    const URL: string = "http://localhost:8080/sensor/api/users/modify-password";
+    const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/users/modify-password";
 
 
     axios
@@ -69,8 +69,8 @@ export const CambiarContrasenia = () => {
       })
       .catch((err) => {
         
-          console.log(err.response.data);
-          console.log(err.response.data.error.message);
+          //console.log(err.response.data);
+          //console.log(err.response.data.error.message);
           //setErrorContraseña("ERROR");
           setModificado("");
         setErrorContraseña(err.response.data.error.message);

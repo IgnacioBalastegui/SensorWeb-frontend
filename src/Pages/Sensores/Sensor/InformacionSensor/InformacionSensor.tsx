@@ -75,7 +75,7 @@ export const InformacionSensor = () => {
         quantity: data.cantidad,
       };
 
-      const URL: string = "http://localhost:8080/sensor/api/sales";
+      const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/sales";
 
       axios
         .post(URL, productoComprado, config)
@@ -94,7 +94,7 @@ export const InformacionSensor = () => {
 
   const getProducto = (): void => {
     axios
-      .get("http://localhost:8080/sensor/api/products/" + idProducto)
+      .get("http://proyecto-backend-web-production.up.railway.app/sensor/api/products/" + idProducto)
       .then((res) => {
         console.log("productos: " + res.data)
         setProducto(res.data);
@@ -108,7 +108,7 @@ export const InformacionSensor = () => {
  
   const getComentarios = () => {
     axios
-      .get("http://localhost:8080/sensor/api/comments/products/" + idProducto)
+      .get("http://proyecto-backend-web-production.up.railway.app/sensor/api/comments/products/" + idProducto)
       .then((res) => {
         setComentarios(res.data);
       })
@@ -133,7 +133,7 @@ export const InformacionSensor = () => {
       const values = JSON.parse(payloadDecoded);
   
       const URL: string =
-          "http://localhost:8080/sensor/api/favorites/products/" + idProducto;
+          "http://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/products/" + idProducto;
   
       axios
       .post(URL,{}, config)
@@ -160,23 +160,6 @@ export const InformacionSensor = () => {
     getComentarios();
   }, []);
 
-  /*const buyProduct = (producto: Producto) => {
-   // console.log(producto)
-
-    const productrepeat = cart.find((productoCarrito:ICarrito) => productoCarrito.id === producto.id);
-    if (productrepeat) {
-      setCart(
-        cart.map((productoCarrito:ICarrito) =>
-        productoCarrito.id === producto.id
-            ? { ...producto, quanty: /*productrepeat.quanty*+ 1 }
-            : productoCarrito
-        )
-      );
-    } else {
-      setCart([...cart, producto]);
-    }
-  }*/
-
   const agregarCarrito = () => {
 
     if (localStorage.getItem("token")) {
@@ -197,7 +180,7 @@ export const InformacionSensor = () => {
       };
 
       const URL: string =
-          "http://localhost:8080/sensor/api/carts/products/" + idProducto;
+          "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + idProducto;
   
       axios
       .post(URL,cantidad, config)
@@ -235,30 +218,6 @@ export const InformacionSensor = () => {
                 <h1>{producto.name}</h1>
                 <h6 className="item_price">${producto.price}</h6>
                 <p>{producto.description}</p>
-
-                {/*<form className="ml-0" onSubmit={onSubmit}>
-                  <div className="form-outline mb-4">
-                    <label className="form-label">Cantidad</label>
-
-                    <input
-                      type="text"
-                      className={`${"form-control"} ${errors.cantidad && "cuadroError"
-                        }`}
-                      {...register("cantidad", {
-                        required: {
-                          value: true,
-                          message: "Ingrese cantidad",
-                        },
-                      })}
-                    />
-
-                    {errors.cantidad && (
-                      <span className={errors.cantidad && "mensajeError"}>
-                        {errors.cantidad.message}
-                      </span>
-                    )}
-                  </div>
-                    </form>*/}
 
                 <div className="text-center text-md-left botonEnvio ml-0">
                     <button

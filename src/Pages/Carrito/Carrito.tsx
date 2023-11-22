@@ -69,7 +69,7 @@ export const Carrito = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts";
+        "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts";
 
       axios.get(URL, config).then((res) => {
 

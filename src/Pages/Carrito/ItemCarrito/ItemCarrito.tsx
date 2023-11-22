@@ -68,7 +68,7 @@ export const ItemCarrito = ({ prodCarrito }: Props) => {
       };
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts/products/" + prodCarrito.product.id;
+        "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + prodCarrito.product.id;
 
       axios
         .post(URL, cantidad, config)

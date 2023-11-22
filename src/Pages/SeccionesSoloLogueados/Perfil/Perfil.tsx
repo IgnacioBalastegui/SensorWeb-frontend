@@ -34,7 +34,7 @@ export const Perfil = () => {
       const values = JSON.parse(payloadDecoded);
       const email = values.email;
 
-      const URL: string = "http://localhost:8080/sensor/api/users";
+      const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/users";
 
       axios.get(URL, config).then((res) => {
         setPerfil(res.data)
