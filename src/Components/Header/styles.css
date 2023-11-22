@@ -1,0 +1,79 @@
+.Cabecera{
+    width:100%;
+    background-color: black;
+    padding:1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.logo{
+   height: 50px;
+}
+.Cabecera-button{
+    display:none;
+    cursor: pointer;
+    color: white;
+}
+.Cabecera-svg{
+    width:2em;
+    height:2em;
+    fill: orangered;
+    color: orange;
+}
+
+.Cabecera-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    
+}
+.Cabecera-li{
+    margin: 0 .8em;
+    color: rgb(185, 183, 183);
+    text-decoration: none;
+padding-top: 15px;
+}
+.Cabecera-li:hover{
+    color: white;
+text-decoration: none;
+}
+
+
+
+@media screen and (max-width:480px){
+
+    .Cabecera-button{
+        display: flex;
+    }
+    .Cabecera-nav{
+        width:100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height:0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+        color: greenyellow;
+    }
+    .Cabecera-nav.isActive{
+        height:50vh;
+        opacity: 1;
+    }
+    .Cabecera-ul{
+        flex-direction: column;
+    }
+    .Cabecera-li{
+        margin: .5em 0;
+    }
+    .logo{
+        width: 30;
+        height: 30;
+    }
+}

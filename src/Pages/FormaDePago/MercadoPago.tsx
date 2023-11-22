@@ -332,7 +332,7 @@ mp.bricks().create("wallet", "wallet_container", {
       const URL: string =
         "http://localhost:8080/sensor/api/carts/cancel";
 
-      axios.post(URL, config).then((res) => {
+      axios.post(URL, {}, config).then((res) => {
 
         //console.log(res.data)
         navigate(RUTA.CARRITO);
@@ -356,14 +356,13 @@ mp.bricks().create("wallet", "wallet_container", {
       {<div className="botonMercadoPago" id="wallet_container">
         <Wallet initialization={{ preferenceId: `${getId}`, redirectMode: 'modal' }} />
       </div>}
-
-      {/*<button
-        className="btn btn-primary btn-block mb-4 botonVolver"
+      <button
+        className="btn btn-primary mb-4 botonVolver"
         onClick={volver}
       >
-        Volver al Carrito
-</button>*/}
+        Volver
+      </button>
 
-    </div> 
+    </div>
   );
 }

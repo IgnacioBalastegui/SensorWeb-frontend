@@ -28,14 +28,16 @@
 
 
 .botonMercadoPago {
-    margin-inline: 35%;
+    display: flex;
     margin-top: 80px;
     margin-bottom: 80px;
+    justify-content: center;
 }
 
 .botonVolver {
-    margin-inline: 40%;
+padding-inline: 40px;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .FormaDePagoTarjeta {
