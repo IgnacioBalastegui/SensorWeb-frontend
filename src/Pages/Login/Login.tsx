@@ -45,7 +45,8 @@ export const Login = () => {
     localStorage.setItem("mail", data.email);
 
     axios
-      .post("http://localhost:8080/sensor/api/auth/login", usuario)
+      //.post("http://localhost:8080/sensor/api/auth/login", usuario)
+      .post("http://proyecto-backend-web-production.up.railway.app/sensor/api/auth/login", usuario)
       .then((res) => {
         setErrorLogin("");
        /* console.log("data: "+res.data);
