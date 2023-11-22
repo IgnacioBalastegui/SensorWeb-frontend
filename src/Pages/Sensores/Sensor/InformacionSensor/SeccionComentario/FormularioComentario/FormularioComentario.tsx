@@ -28,8 +28,8 @@ export const FormularioComentario = ({ idProducto, getComentarios }: Props) => {
 
   const agregarComentario = handleSubmit((data, event) => {
     event?.preventDefault();
-    //const URL = "http://localhost:8080/sensor/api/comments";
-    const URL = "http://localhost:8080/sensor/api/comments/products/"+ idProducto;
+
+    const URL = "https://proyecto-backend-web-production.up.railway.app/sensor/api/comments/products/"+ idProducto;
 
     if (localStorage.getItem("token")) {
       const token: string = JSON.stringify(localStorage.getItem("token"));

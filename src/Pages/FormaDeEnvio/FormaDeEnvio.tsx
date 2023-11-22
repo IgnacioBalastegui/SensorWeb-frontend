@@ -96,7 +96,7 @@ export const FormaDeEnvio = () => {
             //const email = values.email;
 
             const URL: string =
-                "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/next-step";
+                "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/next-step";
 
             const body: IBodyNextStep = {
                 shippingMethodAndAddress:
@@ -149,7 +149,7 @@ export const FormaDeEnvio = () => {
             //const email = values.email;
 
             const URL: string =
-                "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/cancel";
+                "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/cancel";
 
             axios.post(URL,{}, config).then((res) => {
 

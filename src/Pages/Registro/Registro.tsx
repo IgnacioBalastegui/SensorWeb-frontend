@@ -90,7 +90,7 @@ export const Registro = () => {
     localStorage.setItem("mail", data.email);
 
     axios
-      .post("http://proyecto-backend-web-production.up.railway.app/sensor/api/auth/register", usuario)
+      .post("https://proyecto-backend-web-production.up.railway.app/sensor/api/auth/register", usuario)
       .then((res) => {
         setErrorRegistro("");
         setRegistrado("Se ha registrado correctamente");

@@ -44,7 +44,7 @@ product: Product;
       //const email = values.email;
 
       const URL: string =
-        "http://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/all";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/all";
 
       axios.get(URL, config).then((res) => {
 

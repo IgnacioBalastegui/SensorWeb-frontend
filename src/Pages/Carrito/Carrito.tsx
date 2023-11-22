@@ -69,7 +69,7 @@ export const Carrito = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts";
 
       axios.get(URL, config).then((res) => {
 
@@ -104,7 +104,7 @@ export const Carrito = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts/next-step";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/next-step";
 
       const body: IBodyNextStep = {
         shippingMethodAndAddress:
@@ -145,29 +145,6 @@ export const Carrito = () => {
         <div className="col carrito">
           <h3>CARRITO</h3>
 
-          {/*<div className="row carritoContenido"/* key={product.id}*>
-            <img src={sensor} alt="product-card" />
-            <h3 className="name">{/*product.name*}Producto 1</h3>
-            {/*<CartItemCounter product={product} />*}
-            <h5 >-</h5>
-            <h4 className="quanty">{/*product.price * product.quanty*}1</h4>
-            <h5 >+</h5>
-            <h4 className="price">{/*product.price * product.quanty*}$20</h4>
-
-
-            <h3
-              className="cart-delete-button"
-            /* onClick={() => deleteProduct(product.id)}*
-            >
-              ❌
-            </h3>
-
-
-          </div>
-          <Link to={RUTA.FORMADEPAGO} >
-            <button className="btn btn-primary btn-block botonElegirFormaPago">Elegir forma de pago</button>
-          </Link>
-*/}
           {prodCarrito.length > 0 ? (
             <div className="row margen">
               <table className="table">

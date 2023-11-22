@@ -37,7 +37,7 @@ export const CompraRealizada = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://proyecto-backend-web-production.up.railway.app/sensor/api/sale-orders/user?state=ENTREGAR_PRODUCTOS";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/sale-orders/user?state=ENTREGAR_PRODUCTOS";
 
       axios.get(URL, config).then((res) => {
         setProductos(res.data[0].products);

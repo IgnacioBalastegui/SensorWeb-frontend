@@ -75,7 +75,7 @@ export const InformacionSensor = () => {
         quantity: data.cantidad,
       };
 
-      const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/sales";
+      const URL: string = "https://proyecto-backend-web-production.up.railway.app/sensor/api/sales";
 
       axios
         .post(URL, productoComprado, config)
@@ -94,7 +94,7 @@ export const InformacionSensor = () => {
 
   const getProducto = (): void => {
     axios
-      .get("http://proyecto-backend-web-production.up.railway.app/sensor/api/products/" + idProducto)
+      .get("https://proyecto-backend-web-production.up.railway.app/sensor/api/products/" + idProducto)
       .then((res) => {
         console.log("productos: " + res.data)
         setProducto(res.data);
@@ -108,7 +108,7 @@ export const InformacionSensor = () => {
  
   const getComentarios = () => {
     axios
-      .get("http://proyecto-backend-web-production.up.railway.app/sensor/api/comments/products/" + idProducto)
+      .get("https://proyecto-backend-web-production.up.railway.app/sensor/api/comments/products/" + idProducto)
       .then((res) => {
         setComentarios(res.data);
       })
@@ -133,7 +133,7 @@ export const InformacionSensor = () => {
       const values = JSON.parse(payloadDecoded);
   
       const URL: string =
-          "http://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/products/" + idProducto;
+          "https://proyecto-backend-web-production.up.railway.app/sensor/api/favorites/products/" + idProducto;
   
       axios
       .post(URL,{}, config)
@@ -180,7 +180,7 @@ export const InformacionSensor = () => {
       };
 
       const URL: string =
-          "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + idProducto;
+          "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + idProducto;
   
       axios
       .post(URL,cantidad, config)

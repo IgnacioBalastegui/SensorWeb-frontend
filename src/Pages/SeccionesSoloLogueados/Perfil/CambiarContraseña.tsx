@@ -55,7 +55,7 @@ export const CambiarContrasenia = () => {
         Authorization: "Bearer " + window.localStorage.getItem("token"),
       },
     };
-    const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/users/modify-password";
+    const URL: string = "https://proyecto-backend-web-production.up.railway.app/sensor/api/users/modify-password";
 
 
     axios

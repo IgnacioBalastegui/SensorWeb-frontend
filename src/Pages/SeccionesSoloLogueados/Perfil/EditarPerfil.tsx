@@ -70,7 +70,7 @@ export const EditarPerfil = () => {
       const values = JSON.parse(payloadDecoded);
       const email = values.email;
 
-      const URL: string = "http://localhost:8080/sensor/api/users";
+      const URL: string = "https://proyecto-backend-web-production.up.railway.app/sensor/api/users";
 
       axios.get(URL, config).then((res) => {
         setPerfil(res.data)
@@ -164,7 +164,7 @@ export const EditarPerfil = () => {
       },
     };
 
-    const URL: string = "http://proyecto-backend-web-production.up.railway.app/sensor/api/users/modify-data";
+    const URL: string = "https://proyecto-backend-web-production.up.railway.app/sensor/api/users/modify-data";
     // console.log(usuario);
     axios
       .put(URL, usuario, config)

@@ -68,7 +68,7 @@ export const ItemCarrito = ({ prodCarrito }: Props) => {
       };
 
       const URL: string =
-        "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + prodCarrito.product.id;
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + prodCarrito.product.id;
 
       axios
         .post(URL, cantidad, config)
@@ -104,7 +104,7 @@ export const ItemCarrito = ({ prodCarrito }: Props) => {
       };*/
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts/products/" + prodCarrito.product.id;
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + prodCarrito.product.id;
 
       axios
         .delete(URL, {
@@ -144,7 +144,7 @@ export const ItemCarrito = ({ prodCarrito }: Props) => {
       };*/
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts/products/" + prodCarrito.product.id;
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/products/" + prodCarrito.product.id;
 
       axios
         .delete(URL, {

@@ -42,7 +42,7 @@ export const ConfirmarRegistro = () => {
         };
 
         axios
-            .post("http://proyecto-backend-web-production.up.railway.app/sensor/api/auth/confirm", codigo)
+            .post("https://proyecto-backend-web-production.up.railway.app/sensor/api/auth/confirm", codigo)
             .then((res) => {
                // console.log("registrado")
                 event?.target.reset();

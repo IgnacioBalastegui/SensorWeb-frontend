@@ -35,7 +35,7 @@ export const MercadoPago = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://localhost:8080/sensor/api/carts/preference";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/preference";
 
       axios.get(URL, config).then((res) => {
         //console.log(res.data)
@@ -69,7 +69,7 @@ export const MercadoPago = () => {
       //const email = values.email;
 
       const URL: string =
-        "http://proyecto-backend-web-production.up.railway.app/sensor/api/carts/cancel";
+        "https://proyecto-backend-web-production.up.railway.app/sensor/api/carts/cancel";
 
       axios.post(URL, {}, config).then((res) => {
 
